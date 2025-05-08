@@ -1,0 +1,128 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5em;
+}
+
+h2 {
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.navbar {
+    background-color: #1f2937;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar .container {
+    display: flex;
+    color: #e5e7eb;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+
+.navbar a:hover {
+    color: lightslategray;
+}
+
+.navbar a {
+color: #e5e7eb;
+text-decoration: none;
+font-size: 18px;
+font-weight: bold;
+}
+
+.navbar .logo
+{
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+/* SECOND CONTAINER BOX */
+
+/* .Header - This changes the color of the second container with the image and h2 text. this also adjusts the height of the container. */
+.header { 
+    background-color:#7a828d;
+    min-height:fit-content;
+    color: #f9faf8;
+}
+/* img - Changes the image size i have selected */
+img {
+    height: 300px;
+    width: auto;
+    border-radius: 5px;
+}
+
+/* This displays the hero text and the image side-by-side, with using display:flex. aligning the items center, sets  */
+.header .container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 32px ;
+}
+
+.header .container .button {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-top: 16px;
+}
+
+/* button - changes just the button */
+button {
+    background-color: #3882f6;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #f9faf8;
+}
+
+.box {
+    padding: 20px;
+}
+
+/* THIRD SECTION OF THE SITE */
+
+/* the header  */
+.header-2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9faf8;
+}
+
+.boxes {
+    background-color: #f9faf8;
+    min-height: 500px;
+}
+
+.boxes .container-2 {
+    display: flex;
+    align-items: end;
+}
+
+.boxes div {
+    border: solid black;
+    border-radius: 5px;
+    height: 250px;
+      
+}
+
