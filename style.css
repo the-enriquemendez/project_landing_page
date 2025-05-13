@@ -60,8 +60,8 @@ font-weight: bold;
 
 /* .Header - This changes the color of the second container with the image and h2 text. this also adjusts the height of the container. */
 .header { 
-    background-color:#7a828d;
-    min-height:fit-content;
+    background-image: linear-gradient(to right, #5d00c7, #62309a, #cf94ed  );
+    min-height: 400px;;
     color: #f9faf8;
 }
 /* img - Changes the image size i have selected */
@@ -79,19 +79,23 @@ img {
     padding: 32px 32px ;
 }
 
-.header .container .button {
+.header .container {
     align-self: flex-end;
     justify-content: flex-start;
     padding-top: 16px;
 }
 
 /* button - changes just the button */
-button {
-    background-color: #3882f6;
-    padding: 5px 15px 5px 15px;
-    border-radius: 5px;
-    box-shadow: none;
-    color: #f9faf8;
+div .button {
+    text-align: center;
+    background-color:#4848f7;
+    color: #fff;
+    border:none; 
+    border-radius:5px; 
+    width: 120px;
+    padding: 5px;
+    margin-top: 20px;
+  
 }
 
 .box {
@@ -105,24 +109,114 @@ button {
     display: flex;
     align-self: center;
     justify-content: center;
-    padding: 20px;
     background-color: #f9faf8;
+}
+
+/* This targets the tex */
+div .container-2 {
+    text-align: center;
+    padding: 10px;
 }
 
 .boxes {
     background-color: #f9faf8;
-    min-height: 500px;
-}
-
-.boxes .container-2 {
+    min-height: auto;
     display: flex;
-    align-items: end;
+    padding-bottom: 20px;
 }
 
 .boxes div {
-    border: solid black;
     border-radius: 5px;
-    height: 250px;
-      
+    display: flex;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
 }
 
+/* This sizes the image */
+.container-2 img {
+    max-height: 200px;
+    max-width: 300px;
+    object-fit:cover ;
+}
+
+/* This prevents the text from stretching the image */
+figcaption {
+    max-width:300px;
+    text-align: left;
+    padding: 10px;
+}
+
+/* FOURTH SECTION OF THE SITE */
+
+/* Container-3 is selecting all items inside the container, allowing to center items */
+.container-3 {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #5d00c7, #62309a, #cf94ed  );
+    min-height: 300px;;
+    color: #f9faf8;
+    align-items: center;
+    margin: 0;
+    
+}
+/* This adjust the quote text inside the container */
+.quote {
+    font-style:normal
+    max-width: 1000px;
+    font-size: 30px;
+    line-height: 1.5em;
+}
+
+
+/* FIFTH SECTION */
+
+/* This is for the main background box */
+.header-4 { 
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    align-items: center;
+    background-color:#e5e7eb;
+}
+
+/* This allows us to create a smaller box inside the container, and to control the contents*/
+.header-4 .box { 
+    display: flex;
+    height: auto;
+    width: 800px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    gap: 50px;
+    background-image: linear-gradient(to right, #5d00c7, #62309a, #cf94ed  );
+}
+
+.quote-2 {
+    color: #e5e7eb;
+}
+
+/* This updates the button only */
+.button-2 { 
+    text-align: center;
+    top:50%;
+    background-color:#4848f7;
+    color: #fff;
+    border:none; 
+    border-radius:5px; 
+    padding:5px;
+    min-height:30px; 
+    min-width: 120px;
+}
+
+.footer {
+bottom: 0;
+width: 100%;
+background-color: #1f2937;
+color: #e5e7eb;
+text-align: center;
+padding: 20px;
+}
