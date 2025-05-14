@@ -161,7 +161,6 @@ figcaption {
     color: #f9faf8;
     align-items: center;
     margin: 0;
-    
 }
 /* This adjust the quote text inside the container */
 .quote {
@@ -192,6 +191,7 @@ figcaption {
     border-radius: 10px;
     justify-content: space-between;
     gap: 50px;
+
     background-image: linear-gradient(to right, #5d00c7, #62309a, #cf94ed  );
 }
 
